@@ -7,9 +7,5 @@ from django.views.generic import TemplateView
 def my_blog(request):
   return HttpResponse("Hello, Blog!")
 
-class HomePage(TemplateView):
-  """
-  Displays home page"
-  """
-  template_name = 'index.html'
+
 
