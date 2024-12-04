@@ -1,6 +1,7 @@
 body{
     background-color: #fff5f5;
     font-family: 'Playfair Display', serif ;
+    color: #333;
     
 }
 
@@ -132,6 +133,70 @@ body{
     margin-left: 5%;
     color: #666;
 }
+
+.btn-signup,
+.btn-edit {
+    background-color: #ff4d4d;
+    color: #000;
+    border: 2px solid #000;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-signup:hover,
+.btn-signup:active,
+.btn-edit:hover,
+.btn-edit:active {
+    background-color: #ff0000;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.link {
+    color: #ff4d4d;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.link:hover,
+.link:active {
+    color: #ff0000;
+    text-decoration: underline;
+}
+
+.btn-like {
+    color: #ff0000;
+    border: none;
+    background: transparent;
+    transition: transform 0.2s;
+
+}
+
+.btn-delete {
+    color: #fff;
+    background: #ff0000;
+    border: 2px solid #000 ;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-like:hover,
+.btn-like:active,
+.btn-delete:hover,
+.btn-delete:active {
+   transform:scale(1.1); 
+}
+
+.faded {
+    color: #999;
+}
+
+.approval {
+    color: #ff4d4d;
+}
+
+
+
+
 
 
 .navbar {
