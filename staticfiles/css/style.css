@@ -1,0 +1,187 @@
+body {
+    background-color: #fff5e6;
+    font-family: 'Playfair Display', serif;
+}
+
+.brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #8e4585;
+}
+
+.red-o {
+    color: #ff85a2;
+}
+
+.thin {
+    font-weight: 300;
+}
+
+.light-bg {
+    background-color: #fff;
+}
+
+.dark-bg {
+    background-color: #4a0e4e;
+    background-image: linear-gradient(45deg, #4A0E4E, #8E4585);
+    color: #FFF5E6;
+    padding: 30px 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    
+}
+
+.main-bg {
+    background-color: #FFF5E6;
+}
+
+.card {
+    border: none;
+    background-color: transparent;
+}
+
+.card-img, .card-img-bottom, .card-img-top{
+    height: 300px;
+    object-fit: cover;
+}
+
+.img, svg{
+    vertical-align: middle;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-flash {
+    position: absolute;
+    bottom: 5%;
+    min-width: 30%;
+    left: -2px;
+    background-color: #C48F65;
+}
+
+.scale {
+    width: 100%;
+    height: auto;
+}
+
+.author {
+    color: white;
+    margin: 4px;
+    text-transform: uppercase;
+}
+
+.masthead {
+    margin-top: 10px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    height: 33vh;
+    width: 100%;
+}
+
+.masthead-text {
+    background-color: #8E4585;
+    color: white;
+    position: relative;
+}
+
+.masthead-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.masthead-image:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 90%;
+    height: 100%;
+    width: 150%;
+    background: #8E4585;
+    -webkit-transform: skew(15deg);
+    -moz-transform: skew(15deg);
+    transform: skew(15deg);
+    z-index: 100;
+}
+
+.post-link {
+    text-decoration: none;
+    color: #4A0E4E;
+}
+
+.post-link:hover,
+.page-link {
+    color: #ff85A2;
+}
+
+.post-title {
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
+.post-subtitle {
+    margin-left: 5%;
+    color: #C48F65;
+}
+
+.btn-signup,
+.btn-edit {
+    background-color: #8E4585;
+    color: #fff;
+}
+
+.btn-signup:hover,
+.btn-signup:active {
+    background-color: #fff;
+    color: #ff85A2;
+}
+
+
+.link {
+    color: #C48F65;
+    text-decoration: none;
+}
+
+.link:hover,
+.link:active {
+    color: #4A0E4E;
+    text-decoration: underline;
+}
+
+.btn-like {
+    color: #FF85A2;
+    border: none;
+    background: transparent;
+}
+
+.btn-delete {
+    color: #fff;
+    background: #FF85A2;
+}
+
+.btn-like:hover,
+.btn-like:active {
+    color: #FF85A2;
+    background: transparent;
+    border: none;
+}
+
+.faded {
+    color: #C48F65;
+}
+
+.approval {
+    color: #FF85A2;
+}
+
+.navbar{
+    background-color: #FFD700;
+    color: #4A0E4E;
+}
+
+.navbar-brand{
+    color:#4A0E4E !important;
+    font-size: 24px;
+}
