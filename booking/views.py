@@ -14,4 +14,4 @@ def booking_view(request):
     return render(request, 'booking/booking.html', {'form': form})
 
 def booking_success(request):
-   return render(request, 'booking/ booking_success.html')
+   return render(request, 'booking/booking_success.html')
