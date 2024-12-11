@@ -1,537 +1,438 @@
 # Scents Haven Blog
 
-![AmIResponsive Image]()
+![Screenshot 2024-12-11 103347](https://github.com/user-attachments/assets/6c322479-8629-46c8-8500-b76a70ca2107)
 
 
 ## Live website
 
-Link to live website: [Scents Haven]()
+Link to live website: [Scents Haven](https://scents-haven-ee91cc522866.herokuapp.com/)
+
+For Admin access with relevant sign-in information: [Scents Haven blog Admin](https://scents-haven-ee91cc522866.herokuapp.com/admin/)
+> 
+
+
+> 
+> Welcome to my perfume blog, where I share insights about the fascinating world of fragrances. Here, fragrance enthusiasts can explore each post and leave comments to share their thoughts and experiences. This platform fosters a sense of community, allowing everyone to contribute to the conversation and deepen their appreciation for the art of perfumery.
+---
+> 
+
+
+
+>
+---
+
+## CONTENTS
+
+ - [User experience (UX)](#user-experience)
+     - database planning
+     - purpose and intended audience		 
+     - user stories
+ - [Creation process](#creation-process)
+		 
+     - [Wireframes](#wireframes)
+ - [Design](#design)
+		 
+     - Colour scheme
+		 
+     - Typography
+		 
+     - Imagery
+ - [Website features](#website-features)
+ - [Tablet/mobile view](#tablet/mobile-view)
+ - [Future features](#future-features)
+ - [Technologies used](#technologies-used)
+ - [Deployment](#deployment)
+ - [Testing](#testing)
+ - [Credits](#credits)
+ ---
+ ## USER EXPERIENCE
+ ---
+**Database Planning**
+
+I used  [LucidChart](https://lucid.app/documents#/documents?folder_id=recent) to create my ERD for my database. It is a simple model with seven models: User, Post, Comment, about,collaboration request, booking and fragrance samples.
+The User model was imported from Django Allauth
+
+![ERD](https://github.com/user-attachments/assets/a9710654-9ada-4b5a-991e-cff057cc5210)
+
+**Purpose and Intended Audience**
+
+My intention was to design a website that showcases the amazing world of perfumes and fragrances, highlighting the diverse benefits and uses of different scents. At the same time, I wanted to create a space where fragrance enthusiasts could visit and feel involved by sharing their own experiences, tips, and insights about perfumes. The website allows me to present various aspects of perfumery, from the mood-enhancing properties of certain scents and how they can be used to enhance daily life, special occasions, or even as a form of self-expression.
+
+**User stories**
+		 
+| User story | MoSCoW prioritisation |
+| --- | --- |
+| As a **User** I can **use a navigation links** so that **access other areas of the site easily** | Must have |
+| As a **user** I can **click the home page icon** so that **I can quickly and easily return to the home page** | Must have |
+| As a **user** I can **click on the about page link** so that **find out more information about the site** | Must have |
+| As a **user** I can **navigate the social links** so that **connect with the site via social media** | Must have |
+| As a **user** I can **open a blog post** so that **I can get the full information on a post I am interested in** | Must have |
+ | As a **user/admin** I can **view comments on individual posts** so that **I can follow the conversation** | Must have |
+ | As a **user/admin** I can **comment on posts** so that **I can take part in the conversation and be a part of the community** | Must have |
+ | As a **user** I can **edit or delete my comments on a post** so that **I can be involved in the conversation and community** | Must have |
+ | As a **user** I can **use my email and a password to register an account** so that **I can interact with the community and leave comments on posts** | Must have |
+ | As a **site admin** I can **moderate user comments** so that **nothing inappropriate or offensive is added to the site** | Must have |
+ | As a **user** I can **filter the blog posts based on their category** so that **see posts that match my interests** | could have |
+ | As a **site admin** I can **create new blog posts** so that **my audience has up to date and new content to enjoy** | Must have |
+ | As a **site admin** I can **edit or delete blog posts** so that **users have the correct content and mistakes can be rectified** | Must have |
+ | As a **site admin** I can **create and assign post categories** so that **users are able to filter the blog posts for a more tailored experience** |Could have |
+ | As a **user** I can **search for blog posts using keywords** so that **get the specific information I need more quickly** | Won't have |
+ | As a **user** I can **see the most recent posts in a sidebar** so that **I have access to the most recent information quickly** | Won't have |
+ | As a **user** I can **share posts on social media platforms** so that **I can interact with other users and a wider community** | Won't have |
+ | As a **user** I can **make a booking** so that **I can sample fragrances before purchase** | Must have |
+ | As a **site admin** I can **create drafts of blog posts** so that **I can save my work and return to it before publishing** | Must have |
+ 
+I used [GitHub Projects](https://github.com/users/ZazaMasilo/projects/6) to create my project board and populated it with my user stories and added labels according to MoSCoW prioritisation.
+All of the 'must have' user stories were completed with any other issues being carried over to the next phase of the project development.
+Each user story had acceptance criteria added. The key user stories and acceptance criteria are listed below with evidence of how I completed each issue:
+
+![User story 7- Manage blog posts](https://github.com/user-attachments/assets/52046474-be19-446a-a1b7-85e052dd39df)
+Acceptance criteria:
+Site admin can log in
+Once logged in can create a post
+The fulfillment of these criteria can be demonstrated by the presence of blog posts on the site
+
+
+![user-story-6 - Modify or delete comment on a post](https://github.com/user-attachments/assets/bed806bc-fbe3-485c-896b-98c0e71a7be0)
+Acceptance criteria:
+As a logged in user their comments are available to edit/delete - this was set up to display CRUD functionality and tested extensively during development. 
+	 
+
+![user-story-5 - Comment on a post](https://github.com/user-attachments/assets/644afa62-84d3-47bb-8a2a-09a10baeb274)
+Acceptance criteria:
+The user can log in and create comments
+If there is more than one comment then there is a conversation thread
+This user story also contributed towards the CRUD functionality and was tested throughout every phase of the project development
+ 
+ 
+		 
+---
 
-## Purpose of the project
+## CREATION PROCESS
 
+  ### Wireframes
+  I only created wire frames for the pages I intended to create myself. All login and registration forms were created by allauth and as such I haven't provided wire frames.
 
+![Figma wireframe](https://github.com/user-attachments/assets/e7b384cb-00bb-42fa-83ee-93c3182fffe7)
 
+  
 
-## Table of contents
 
+<details>
+<summary>Blog detail wireframes for mobile and desktop</summary>
 
+  <img width="1080" alt="blog post detail" src="https://github.com/user-attachments/assets/9f94cd74-4afe-4984-8455-f962e58bd48b">
 
-- [User experience (UX)](#user-experience-ux)
-   * [Key project goals](#key-project-goals)
-   * [Target audience](#target-audience)
-   * [User requirements and expectations](#user-requirements-and-expectations)
-- [Epics and user stories](#epics-and-user-stories)
-   * [Epics](#epics)
-   * [User stories](#user-stories)
-- [Features](#features)
-   * [Logo and navigation bar](#logo-and-navigation-bar)
-   * [Hero image](#hero-image)
-   * [Django alert messages](#django-alert-messages)
-   * [Clear indication as to whether the user is logged in or out at all times](#clear-indication-as-to-whether-the-user-is-logged-in-or-out-at-all-times)
-   * [Call to action button](#call-to-action-button)
-   * [A list of blog posts](#a-list-of-blog-posts)
-   * [See an individual blog post in detail](#see-an-individual-blog-post-in-detail)
-   * [Pagination](#pagination)
-   * [About page](#about-page)
-   * [Collaboration request form](#collaboration-request-form)
-   * [Sign in form](#sign-in-form)
-   * [Register form (Sign up)](#register-form-sign-up)
-   * [Sign out page](#sign-out-page)
-   * [Book a makeover page](#book-a-makeover-page)
-   * [Makeover deals](#makeover-deals)
-   * [Form with CRUD functionality to book a makeover when logged in](#form-with-crud-functionality-to-book-a-makeover-when-logged-in)
-   * [View the bookings I have made when I am logged in](#view-the-bookings-i-have-made-when-i-am-logged-in)
-   * [Edit the bookings I have made when I am logged in](#edit-the-bookings-i-have-made-when-i-am-logged-in)
-   * [Delete the bookings I have made when I am logged in](#delete-the-bookings-i-have-made-when-i-am-logged-in)
-   * [View comments on posts](#view-comments-on-posts)
-   * [CRUD functionality on comments when logged in](#crud-functionality-on-comments-when-logged-in)
-   * [Footer](#footer)
-   * [Custom 404 page](#custom-404-page)
-   * [Custom 403 page](#custom-403-page)
-   * [MoSCoW](#moscow)
-- [Future features](#future-features)
-- [Design](#design)
-   * [Color](#color)
-- [Wireframes](#wireframes)
-   * [Index page wireframes](#index-page-wireframes)
-   * [About page wireframes](#about-page-wireframes)
-   * [Book ](#book)
-   * [Blog post detail page](#blog-post-detail-page)
-   * [Register page](#register-page)
-   * [Log in page](#log-in-page)
-   * [Log out page](#log-out-page)
-- [Database schema](#database-schema)
-   * [Entity relationship diagram](#entity-relationship-diagram)
-   * [Entity relationship tables](#entity-relationship-tables)
-- [Technology used](#technology-used)
-   * [Languages and framework](#languages-and-framework)
-   * [Database](#database)
-   * [Technologies and tools](#technologies-and-tools)
-- [Testing](#testing)
-   * [Fixed bugs](#fixed-bugs)
-   * [Unfixed bugs](#unfixed-bugs)
-   * [Supported screens and browsers](#supported-screens-and-browsers)
-- [Deployment](#deployment)
-   * [Pre deployment](#pre-deployment)
-   * [Deploying with heroku](#deploying-with-heroku)
-   * [Fork this repository:](#fork-this-repository)
-   * [Clone this repository:](#clone-this-repository)
-- [Credits](#credits)
-   * [Code](#code)
-   * [Media](#media)
-   * [Inspiration from real world beauty blogs](#inspiration-from-real-world-beauty-blogs)
-- [Acknowledgements](#acknowledgements)
+</details>
 
 
 
+---
 
+## DESIGN
+  - **Typography**
+    
+    [Google Fonts](https://fonts.google.com/) was used to choose the font used. I had the idea that I wanted two fonts to 
+   differentiate the general site text from the personal blog text so the following font was imported:
+    
+    The Gloria Hallelujah font was chosen for the blog introduction and the blog entries themselves as it resembles 
+    handwritten text and I felt it would lend a more personal touch to the blog. I wanted it to feel as though the user was 
+    reading my diary entries directly.
+    
+  - **Colour scheme**
+    
+  ![colour-scheme](https://github.com/user-attachments/assets/00aa9746-14ed-425e-979c-1dee50ba4843)
 
+        
+    As the blog is about nature and wildlife I wanted the colour scheme to reflect the colours I have in my garden. I wanted 
+    strong, primary colours for impact as they would be against a white background, but didn't want a large palette as I 
+    included lots of images of wildlife that I didn't want to detract from. 
+    The palette was chosen using [Coolers](https://coolors.co/)
+    
+  - **Imagery**
+    
+    The majority of the images used in each blog post are my own images taken of my garden and I was really proud to be able 
+    to use them. I had a lot of fun creating posts and uploading images. Seeing the finished article on the screen gave 
+    me enormous pleasure despite the fact that the load time for my site was compromised.
+    Two of the images were royalty-free stock images from [Pexels](https://www.pexels.com/) Acknowledgements for the 
+    individual photographers are in the [credits](#credits) section.
+ 
 
-## User experience (UX)
 
+ ---
 
+## WEBSITE FEATURES
 
 
-### Key project goals
+  **MAIN VIEW**
+  <details open>
+  <summary>landing page</summary
+  ![home-page](https://github.com/user-attachments/assets/72eefb0f-81d3-41d5-b856-bfa8198ccf6b)
 
 
+  </details>
+  I decided to have users arrive directly on the blog post page rather than requiring them to log in or register before being able to see anything. 
+  I felt it would draw people in more and encourage them to then register and get involved.
+  There are clear messages to tell the user whether they are logged in or not
 
-### Target audience
+<br>
+    
+  **BLOG POST DETAIL VIEW**
+  <details>
+  <summary>The detailed view of each </summary>
+					     
+  ![post-detail](https://github.com/user-attachments/assets/03b2cda8-1505-4bd3-9fe2-8fcd2cf7ca2d)
 
+  
+  </details>
+  Each blog post is shown with the image and the detail of the post in a font I chose to make it appear as though it was an entry in a diary. 
 
-### User requirements and expectations
+  <br>
 
+  **COMMENT FEATURE**
+  <details>
+  <summary>Comment box</summary>
+  ![comment](https://github.com/user-attachments/assets/cdf67ea2-1fad-410c-91e2-659a28432bde)
 
-## Epics and user stories
+	  
+  </details>
+  Each blog post gives the user the option to add comments. They can also edit/delete commemts they have previously made. The 
+ comments then appear colour coded so that the user can tell which have been approved by admin.
 
-### Epics
 
+  **SOCIAL LINKS FEATURE**
 
-## Features
+
+ ![footer](https://github.com/user-attachments/assets/57a79318-bd2f-423e-b015-3f59dea69dce)
+
+
+
+  The footer gives links to social sites and GitHub. The colour was chosen to match the header and fit in with the overall 
+  colour scheme.
+
+
+
+
+ ---
+
+## FUTURE FEATURES
+The following would be options to consider including in future versions of the website:
+  - an about page for information about the developer
+    
+  - an option for users to create their own blog posts
+    
+  - a way for users to take part in some citizen science where they can document species they have seen in their gardens
+
+  - a booking site where users can book nature activities
+
+  - a gallery page of users pictures
+
+
+
+## TECHNOLOGIES USED
+
+  ### Languages used
+  - HTML5
+
+  - CSS
+
+  - JavaScript
+
+  - Python
+   - asgiref==3.8.1
+   - cloudinary==1.41.0
+   - dj-database-url==0.5.0
+   - gunicorn==20.1.0
+   - oauthlib==3.2.2
+   - psycopg==3.2.1
+   - PyJWT==2.9.0
+   - python3-openid==3.2.0
+   - requests-oauthlib==2.0.0
+   - sqlparse==0.5.1
+   - urllib3==1.26.19
+   - whitenoise==5.3.0
+     
+
+  - Django
+    - summernote==0.8.20.0
+    - allauth==0.57.2
+    - crispy-forms==2.3
+
+  ### Frameworks, libraries and programs used
+
+   
+  1. [Bootstrap 4.6](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
+        - Bootstrap was used to ensure the site was responsive and for styling
+  2. [Balsamiq](https://balsamiq.com/wireframes/)   
+        - Balsamiq was used to produce the wireframes in the design phase.
+  3. [Git](https://git-scm.com/)
+        - Git was used for version control
+  4. [Github](https://github.com/)
+        - GitHub was used to store the code and allow collaboration on the project.
+  5. [Contrast Finder](https://app.contrast-finder.org/?lang=en)
+        - Contrast Finder was used to check the contrast between text colour and background image
+  6. [Tiny.PNG](https://tinypng.com/)
+        - Tiny.PNG was used to compress images
+  7. [StackEdit](https://stackedit.io/)
+        - StackEdit was used to assist with the markdown in the README.md
+  8. [Google Chrome Dev Tools](https://developer.chrome.com/docs/devtools)
+        - Used to troubleshoot and test design ideas and styling.   
+  9.  [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview)  
+        - used to test performance of the website
+  10. [Favicon](https://favicon.io/)
+        - used to generate the favicon  
+  11. [W3 Schools](https://www.w3schools.com/)
+        - used to look up syntax for HTML and CSS
+  12. [Stack Overflow](https://stackoverflow.com/)                  
+        - used for queries around coding
+  13. [Perplexity](https://www.perplexity.ai/)    
+        - used to provide sources to generate text for the website   
+  14. [Wikipedia](https://www.wikipedia.org/)      
+        - used to generate text
+  15. [Wave web accessibility evaluation tool](https://wave.webaim.org/)
+        - used to supply the weather API
+  16. [Font Awesome](https://fontawesome.com/)    
+        - used for the favicon
+  17. [Pexels](https://www.pexels.com/)
+        - used for copyright free images
+  18. [W3C HTML validator](https://validator.w3.org/)
+        - used to validate the HTML
+  19. [W3 Jigsaw](https://jigsaw.w3.org/css-validator/)
+        - used to validate the CSS
+  20. [JSHint](https://jshint.com/)
+        - used to validate the JavaScrip
+  21. [Python Enhancement Proposals](https://peps.python.org/pep-0008/)
+        - for advice on PEP8 compliance
+  22. [Free Code Camp](https://freecodecamp.org)   
+        - for help with JavaScript concepts and syntax 
+  23. [Code Academy](https://codeacademy.com)   
+        - for help with JavaScript concepts and syntax  
+  24. [Code explained repository on GitHub](https://github.com/CodeExplainedRepo/Weather-App-JavaScript)
+        - for help setting up a weather app using an API
+  25. [Claude AI](https://claude.ai/)
+         - for help with code queries
+  26. [Adobe Color](https://color.adobe.com/create/color-wheel)
+        
+  28. [Django framework](https://www.djangoproject.com/)
+  29. [Django Project - Build a simple blog tutorial](https://www.youtube.com/watch?v=S9-Bt1JgRjQ&list=PLOLrQ9Pn6cawWd-5UZM6CIm0uqFXeBcTd&index=5)
+  30. [CI Python Linter](https://pep8ci.herokuapp.com/) - for validating Python code
+  31. [Heroku](https://dashboard.heroku.com/apps)
 
-### Logo and navigation bar
 
 
-#### Mobile navigation using burger menu
+ ---
 
-![Mobile navbar with burger menu]()
+## DEPLOYMENT
+The site was deployed to Heroku. The steps to deploy are as follows:
+ - Install the gunicorn python package and create a file called 'Procfile' in the repo's root directory
+ - In the Procfile write 'web: gunicorn lunar_lists.wsgi'
+ - In settings.py add ".herokuapp.com" to the ALLOWED_HOSTS list
+ - In settings.py add 'https://*.herokuapp.com' to CSRF_TRUSTED_ORIGINS list, git add, commit and push to github
 
-#### Monitor navigation bar
+Navigate to the Heroku dashboard
+ - Create a new Heroku app
+ - Give it a name and select the region 'Europe'
+Navigate to settings tab and scroll down to Config Vars
+ - Click 'Reveal Config Vars'
+ - Add the following keys:
+         key = DATABASE_URL | value = (my secret database url)
+         key = SECRET_KEY | value = (my secret key)
+Navigate to Deploy tab
+ - Connect to GitHub and select the repo 'lunar-lists'
+ - Scroll down to 'Manual deploy' and select the 'main' branch
+ - Click 'Deploy Branch'
+   
 
-![Monitor navbar]()
 
-### Hero image
+ ---
 
+## TESTING
 
-![Hero image]()
+  ### HTML validation
 
-### Django alert messages
+I have used the W3C Markup validator to validate all of my HTML code - [W3C Markup Validator](https://validator.w3.org/)
 
+A different approach was required for validating the HTML for this project as all of the pages are developed using DTL and most require user authentication. The HTML validator will throw errors if I were to use the URL so I have had to follow the below approach for every page:
+  - navigate to the deployed Heroku link
+  - right click to find the 'view page source' link
+  - copy and paste the HTML code from here into the validator via the direct input
 
-#### Django alert message example 1
+[home page html validation](readme.docs/home-page-html.png)
 
+All HTML was checked and had no errors or warnings to show as indicated above. 
+The home page had an initial error where I had nested a <p> within a <span> but I corrected this and commited the code and the validation was clear.
 
-![Django alert message 1]()
+   ### CSS validation
 
-#### Django alert message example 2
+[CSS validation](readme.docs/css-validation.png)
+[W3C CSS Validator](https://jigsaw.w3.org/css-validator/) was used to validate my CSS file. External CSS for Bootstrap, provided by [CDN](https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css) was not tested.
 
-![Django alert message 2]()
+   ### Javascript validation
 
-#### Django alert message example 3
+  [JavaScript Validator](https://jshint.com) - the JavaScript validation did not throw up and issues. The fact that the use of let and const to define variables and template literals is only available with ES6 was highlighted.
 
+   ### Python validation
+[CI Python Linter](https://pep8ci.herokuapp.com/#) was used to validate the python files I created or edited myself.
+Initial errors were thrown up involving line length of comments and spacing but these were corrected.    
 
-![Django alert message 3]()
+  
 
-### Clear indication as to whether the user is logged in or out at all times
+## Lighthouse scores via Chrome dev tools 
+![lighthouse](https://github.com/user-attachments/assets/ad97e67e-3d28-4c94-a847-d2c011aeac67)
 
-#### Clear indication for when the user is logged in
+The performance score is low due to the amount of images used but all the images have been compressed.
 
-![Logged in indication]()
+  
 
+### Accessibility     
 
-#### Clear indication for when the user is logged out
+The site was tested via WAVE the web accessibility evaluation tool and showed some alerts for contrast between the text and the background colour.
+The first was for the message warning a user they are not logged in, which had white text against a bright red. The colour of the background was muted and checked via [Contrast Finder](https://app.contrast-finder.org/?lang=en) which showed excellent contrast. 
+There was also a contrast issue between the white text and the orange background in the navbar and footer but I felt this was not enough of an issue to change the appearance and style of the whole site.
 
-![Logged out indication]()
 
-### Call to action button
+<br>
 
 
-![Call to action button]()
+### Issues/Bugs
+  
+  - On the blog post detail page the image is only showing the top part
+  - The images on the main page are very large and not a uniform shape....I decided I like being able to see the full image rather than limiting how much to see and I like
+    the fact that everything isn't uniform but that might just be me!
+ - there are too many to list in all honesty, so apologies, but I didn't have the ability or confidence to be able to sort everything out in this version of the project...hopefully I 
+   will have more luck with a resubmission...I will be less stressed  and have time to learn Django more
 
-### A list of blog posts
 
+### Agile Process
+I made an attemtpt to follow an agile process. I had a project board in github which I updated with my user stories. Each user story was labelled according to MoSCoW prioritisation and had acceptance criteria. If I'm honest I didn't then keep the board up to date as I should have as I was so focused on the minutiae of the project and the stress of not thinking I would be able to actually produce anything that the board was the last priority. I have updated it since drawing a line under my development for now and many of the user stories have been moved into the finished section. There are several still in the backlog which have been added to my future features.
+I have learned a lot for the future about planning and a large part of that is using the project board more and following an agile process more closely to keep myself on track.
 
-![List of blog posts]()
 
-### See an individual blog post in detail
 
-![Individual blog post 1]()
+## CREDITS
 
-![Individual blog post 2]()
+**Content**
+  - [Kera Cudmore/readme-examples on GitHub](https://github.com/kera-cudmore/readme-examples)
+   was used to help write the README.md
+  - [Code Institute Sample README](https://github.com/Code-Institute-Solutions/SampleREADME)
+  was used as a reference when writing the README.
+  - [Django project - build a simple blog](https://www.youtube.com/watch?v=S9-Bt1JgRjQ&list=PLOLrQ9Pn6cawWd-5UZM6CIm0uqFXeBcTd&index=5) was used to give a tutorial for setting up a blog app in Django and adding a category model
+  - [Code Institute](https://learn.codeinstitute.net/) was used for extra reference for HTML, CSS, Python and Django
+  - [W3 Schools](https://www.w3schools.com/) was used for reference on syntax
+  - [Stack Overflow](https://stackoverflow.com/) was used for syntax and coding queries
+  
+**Media**
+  - All images not my own were taken from [Pexels](https://www.pexels.com/). Credit to the individual artists: Graeme Travers for Damselfly and Mark A Jenkins for Blue Tit 
+  - [Amiresponsive](https://ui.dev/amiresponsive) for the responsivity mockup on the README.
 
-### Pagination
+  - [Ignore X frame headers](https://chromewebstore.google.com/detail/ignore-x-frame-headers/gleekbfjekiniecknbkamfmkohkpodhe)
+    was used to download a Chrome extension to allow the resposivity image to be taken
 
 
-![Pagination feature]()
-
-### About page
-
-
-
-![About page]()
-
-### Collaboration request form
-
-
-![Collaboration form]()
-
-### Sign in form
-
-
-
-![Sign in form]()
-
-### Register form (Sign up)
-
-
-
-![Register form]()
-
-### Sign out page
-
-
-
-![Sign out page]()
-
-### Book a page
-
-
-
-![Book  page]()
-
-### Makeover deals
-
-
-
-![Makeover deals]()
-
-### Form with CRUD functionality to book a makeover when logged in
-
-
-
-![Booking crud screenshot]()
-
-### View the bookings I have made when I am logged in
-
-
-
-![List of my bookings]()
-
-### Edit the bookings I have made when I am logged in
-
-
-![Edit makeover booking form]()
-
-### Delete the bookings I have made when I am logged in
-
-
-
-![Delete booking]()
-
-### View comments on posts
-
-
-
-![Comments on blogs]()
-
-### CRUD functionality on comments when logged in
-
-
-
-![Comment crud screenshot]()
-
-### Footer
-
-
-![Footer screenshot]()
-
-### Price of 
-
-
-
-![Price screenshot]()
-
-### Custom 404 page
-
-
-
-![404 screenshot]()
-
-### Custom 403 page
-
-
-
-### MoSCoW
-
-
-
-![MoSCoW screenshot 1]()
-
-
-
-![MoSCoW screenshot 2]()
-
-## Future features
-
-
-
-## Design
-
-### Color
-
-
-
-
-
-
-
-
-![Accessible color palette]()
-
-.
-
-## Wireframes
-
-
-
-### Index page wireframes
-
-#### Mobile
-
-![Index iPhone SE]()
-
-#### Tablet
-
-![Index Tablet]()
-
-#### Monitor
-
-![Index Monitor]()
-
-### About page wireframes
-
-#### Mobile
-
-![About iPhone SE]()
-
-#### Tablet
-
-![About Tablet]()
-
-#### Monitor
-
-![About Monitor]()
-
-### Book makeover page wireframes
-
-#### Mobile
-
-![Makover iPhone SE]()
-
-#### Tablet
-
-![Makeover Tablet]()
-
-#### Monitor
-
-![Makeover Monitor]()
-
-### Blog post detail page
-
-#### Mobile
-
-![Blog Post iPhone SE]()
-
-#### Tablet
-
-![Blog Post Tablet]()
-
-#### Monitor
-
-![Blog Post Monitor]()
-
-### Register page
-
-#### Mobile
-
-![Register iPhone SE]()
-
-#### Tablet
-
-![Register Tablet]()
-
-#### Monitor
-
-![Register Monitor]()
-
-### Log in page
-
-#### Mobile
-
-![Log In iPhone SE]()
-
-#### Tablet
-
-![Log In Tablet]()
-
-#### Monitor
-
-![Log In Monitor]()
-
-### Log out page
-
-#### Mobile
-
-![Log Out iPhone SE]()
-
-#### Tablet
-
-![Log Out Tablet]()
-
-#### Monitor
-
-![Log Out Monitor]()
-
-## Database schema
-
-### Entity relationship diagram
-
-In the diagram below it can be seen that User has a relationship to Post, Comment and Booking. Comment has a relationship with both User and Post.
-
-![ERD Diagram](https://github.com/user-attachments/assets/1c9fafa0-f812-41f4-a630-c40ea13e2044)
-
-### Entity relationship tables
-
-
-
-
-## Technology Used
-
-### Languages and framework
-
-
-
-### Database
-
-
-
-### Technologies and tools
-
-
-
-## Testing
-
-
-### Fixed bugs
-
-
-#### How the admin message looks now that it's fixed
-
-
-
-#### What was changed to fix the admin message
-
-
-
-.
-
-#### What booking filter problem looked like
-
-
-
-#### The code that was altered for the fix is in this screenshot
-
-
-
-
-
-
-
-#### What navbar problem looked like is in this screenshot
-
-
-
-#### The code that was altered for the fix is in this screenshot
-
-
-
-#### Before it was fixed it looked like this
-
-![Bug deals image 1]()
-
-#### After it was fixed it looked like this
-
-![Bug deals image 2]()
-
-#### This is the code that was altered
-
-![Bug deals image 3]()
-
-### Unfixed bugs
-
-
-
-### Supported screens and browsers
-
-#### Screens
-
-
-
-#### Browsers
-
-- Chrome
-- Firefox
-- Safari
-- Edge
-- Opera
-
-## Deployment
-
-
-
-### Pre deployment
-
-
-
-### Deploying with heroku
-
-
-
-### Fork this repository:
-
-
-
-### Clone this repository:
-
-
-
-## Credits
-
-### Code
-
-
-### Media
-
-
-
-### Inspiration from real world beauty blogs
-
-[Statement Beauty]()
-
-[Inspire Me]()
-
-[Place Holder]()
-
-## Acknowledgements
-
-
+**Acknowledgements**
+  - Amy Richardson (Facilitator with Code Institute) - For providing support and resources and tirelessly encouraging
+  - Mark Briscoe (SME with Code Institute) - For providing technical knowledge and support with coding and GitHub/GitPod and being constantly 
+    encouraging and positive
+  - John Rearden (Coding coach with Code Institute) - for amazing coding expertise and calm advice
+  - Ruairidh MacArthur (Coding coach with Code Institute) - for amazing coding expertise and calm advice
+  - my amazing cohort for the support and laughs and encouragement - particularly Alex Curnow for making me stay every time I was determined to quit

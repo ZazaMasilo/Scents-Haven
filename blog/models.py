@@ -12,8 +12,8 @@ class Category(models.Model):
     name = models.CharField(max_length=100, unique=True)
     slug = models.SlugField(max_length=100, unique=True)
    
-def __str__(self): 
-  return self.name
+    def __str__(self): 
+        return self.name
 
 
 class Post(models.Model):
@@ -29,16 +29,15 @@ class Post(models.Model):
     status = models.IntegerField(choices= STATUS, default=0)
     excerpt = models.TextField(blank=True)
     updated_on = models.DateTimeField(auto_now=True)
-
     category = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True, blank=True)
     
 
-class META:
-    ordering = ["created_on"] 
+    class Meta:
+        ordering = ["created_on"] 
 
 
-def __str__(self):
-  return f"{self.title} | written by {self.author}"
+    def __str__(self):
+        return f"{self.title} | written by {self.author}"
 
 
 class Comment(models.Model):
@@ -50,10 +49,10 @@ class Comment(models.Model):
       approved = models.BooleanField(default=False)
       created_on = models.DateTimeField(auto_now_add=True)
       
-class META:
-    ordering = ["created_on"] 
+      class Meta:
+          ordering = ["created_on"] 
 
-def __str__(self):
-    return f"comment {self.body} by {self.author}"
+      def __str__(self):
+          return f"comment {self.body} by {self.author}"
 
 
