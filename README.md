@@ -9,15 +9,8 @@
 Link to live website: [Scents Haven]()
 
 For Admin access with relevant sign-in information: [Scents Haven Admin](https://8000-zazamasilo-scentshaven-dj01lpb9cda.ws.codeinstitute-ide.net/admin/)
-> 
-> Welcome to my perfume blog, a fragrant space where I explore the captivating world of scents. Here, you’ll find engaging posts about various perfumes, fragrance families, and tips for enhancing your scent journey. Readers are encouraged to share their thoughts and experiences in the comments section of each post, fostering a vibrant community of fragrance enthusiasts. 
----
-> 
+Welcome to my perfume blog, a fragrant space where I explore the captivating world of scents. Here, you’ll find engaging posts about various perfumes, fragrance families, and tips for enhancing your scent journey. Readers are encouraged to share their thoughts and experiences in the comments section of each post, fostering a vibrant community of fragrance enthusiasts. 
 
-
-
->
----
 
 
 
@@ -146,15 +139,6 @@ Incorporating a signup feature would not only enhance user engagement but also h
 
 I decided a  well-designed booking feature would contribute to a seamless user experience, making it easier for visitors to interact with the blog and access the services.
 
-
-
-
-
- 
-
-
-> 
-> 
 
 ## FUTURE FEATURES
 The following are some options to consider for inclusion in future versions of the website:
