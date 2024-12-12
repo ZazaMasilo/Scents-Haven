@@ -221,5 +221,41 @@ The following are some options to consider for inclusion in future versions of t
  ## TESTING
 
   ### HTML validation
+  I have used the W3C Markup validator to validate all of my HTML code - [W3C Markup Validator](https://validator.w3.org/)
+
+A different approach was required for validating the HTML for this project as all of the pages are developed using DTL and most require user authentication. The HTML validator will throw errors if I were to use the URL so I have had to follow the below approach for every page:
+  - navigate to the deployed Heroku link
+  - right click to find the 'view page source' link
+  - copy and paste the HTML code from here into the validator via the direct input
+
+![Screenshot 2024-12-12 114704](https://github.com/user-attachments/assets/3d160f1d-bdc5-47e7-919f-a44f4f533047)
+
+All HTML was checked and had no errors or warnings to show as indicated above. 
+
+  ### CSS validation
+
+<img width="920" alt="image" src="https://github.com/user-attachments/assets/cbb68fde-1a20-42a1-8f71-ebcf557f39b3" />
+[W3C CSS Validator](https://jigsaw.w3.org/css-validator/) was used to validate my CSS file. 
+All CSS checked and had no errors or warnings to show as indicated above.
+
+ ### Javascript validation
+
+  [JavaScript Validator](https://jshint.com) - The JavaScript code passed the validation process without any errors being detected. The use of let and const to define variables and template literals is only available with ES6 was highlighted.
+
+   ### Python validation
+[CI Python Linter](https://pep8ci.herokuapp.com/#) was used to validate the python files I created or edited myself.
+Initial errors were shown involving indentation and spacing but these were corrected.    
+
+  
+
+## Lighthouse scores via Chrome dev tools 
+<img width="388" alt="image" src="https://github.com/user-attachments/assets/aa6110fe-4857-449f-9b8c-728cc27a1edc" />
+
+
+
+The performance score is low due to image formats. Image formats like WebP and AVIF often provide better compression than PNG or JPEG, which means faster downloads and less data consumption.
+
+
+
 
 
