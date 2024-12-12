@@ -123,6 +123,30 @@ The purpose of Scents Haven is to explore and celebrate the art of perfumery, pr
  ---
 
  ## WEBSITE FEATURES
+ 
+   ### Main View
+
+ <img width="277" alt="image" src="https://github.com/user-attachments/assets/656122c4-3d9f-461c-a233-ab1a7f3f732c" />
+
+  I decided to have users arrive directly on the blog post page rather than requiring them to log in or register before being able to see anything. 
+  I felt it would draw people in more and encourage them to then register and get involved.
+  There are clear messages to tell the user whether they are logged in or not
+  
+  ### Signup feature
+
+<img width="898" alt="image" src="https://github.com/user-attachments/assets/2165a9fd-e432-42d8-b422-0af910153300" />
+
+Incorporating a signup feature would not only enhance user engagement but also helps cultivate a loyal readership and grow my blog's reach.
+
+### Booking feature
+
+<img width="652" alt="image" src="https://github.com/user-attachments/assets/4da7b7db-0a60-4eff-aea5-e764c95d60ca" />
+
+<img width="565" alt="image" src="https://github.com/user-attachments/assets/e9ca4fd6-d92f-40d8-9ecd-c15fcbcbb091" />
+
+I decided a  well-designed booking feature would contribute to a seamless user experience, making it easier for visitors to interact with the blog and access the services.
+
+
 
 
 
@@ -217,6 +241,25 @@ The following are some options to consider for inclusion in future versions of t
  ---
 
  ## DEPLOYMENT
+ The site was deployed to Heroku. The steps to deploy are as follows:
+ - Install the gunicorn python package and create a file called 'Procfile' in the repo's root directory
+ - In the Procfile write 'web: gunicorn scents haven.wsgi'
+ - In settings.py add ".herokuapp.com" to the ALLOWED_HOSTS list
+ - In settings.py add 'https://*.herokuapp.com' to CSRF_TRUSTED_ORIGINS list, git add, commit and push to github
+
+Navigate to the Heroku dashboard
+ - Create a new Heroku app
+ - Give it a name and select the region 'Europe'
+Navigate to settings tab and scroll down to Config Vars
+ - Click 'Reveal Config Vars'
+ - Add the following keys:
+         key = DATABASE_URL | value = (my secret database url)
+         key = SECRET_KEY | value = (my secret key)
+Navigate to Deploy tab
+ - Connect to GitHub and select the repo 'lunar-lists'
+ - Scroll down to 'Manual deploy' and select the 'main' branch
+ - Click 'Deploy Branch'
+   
 
  ## TESTING
 
